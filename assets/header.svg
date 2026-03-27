@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="glitch1">
+      <feOffset dx="3" dy="0" result="r"/>
+      <feOffset dx="-3" dy="0" in="SourceGraphic" result="b"/>
+      <feColorMatrix in="r" type="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" result="red"/>
+      <feColorMatrix in="b" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 0 1 0" result="blue"/>
+      <feBlend in="red" in2="blue" mode="screen" result="blend"/>
+      <feBlend in="SourceGraphic" in2="blend" mode="screen"/>
+    </filter>
+    <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff00ff"/>
+      <stop offset="50%" style="stop-color:#00ffff"/>
+      <stop offset="100%" style="stop-color:#ff00ff"/>
+    </linearGradient>
+    <linearGradient id="subtitleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ffff"/>
+      <stop offset="100%" style="stop-color:#ff6ec7"/>
+    </linearGradient>
+    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="rgba(255,255,255,0.03)"/>
+    </pattern>
+    <clipPath id="glitchClip1">
+      <rect x="0" y="80" width="900" height="8"/>
+      <rect x="0" y="120" width="900" height="4"/>
+      <rect x="0" y="195" width="900" height="6"/>
+    </clipPath>
+    <clipPath id="glitchClip2">
+      <rect x="0" y="95" width="900" height="5"/>
+      <rect x="0" y="140" width="900" height="7"/>
+      <rect x="0" y="210" width="900" height="4"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="300" fill="#0a0a0f"/>
+
+  <!-- Grid lines -->
+  <g opacity="0.08" stroke="#00ffff">
+    <line x1="0" y1="50" x2="900" y2="50" stroke-width="0.5"/>
+    <line x1="0" y1="100" x2="900" y2="100" stroke-width="0.5"/>
+    <line x1="0" y1="150" x2="900" y2="150" stroke-width="0.5"/>
+    <line x1="0" y1="200" x2="900" y2="200" stroke-width="0.5"/>
+    <line x1="0" y1="250" x2="900" y2="250" stroke-width="0.5"/>
+    <line x1="150" y1="0" x2="150" y2="300" stroke-width="0.5"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke-width="0.5"/>
+    <line x1="450" y1="0" x2="450" y2="300" stroke-width="0.5"/>
+    <line x1="600" y1="0" x2="600" y2="300" stroke-width="0.5"/>
+    <line x1="750" y1="0" x2="750" y2="300" stroke-width="0.5"/>
+  </g>
+
+  <!-- Scanlines overlay -->
+  <rect width="900" height="300" fill="url(#scanlines)"/>
+
+  <!-- Animated horizontal glitch bars -->
+  <g opacity="0.15">
+    <rect x="0" y="73" width="900" height="2" fill="#ff00ff">
+      <animate attributeName="opacity" values="0;0.4;0;0;0.2;0" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="73;75;73;110;73" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="0" y="180" width="900" height="1" fill="#00ffff">
+      <animate attributeName="opacity" values="0;0.3;0;0.5;0" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="width" values="900;400;900;600;900" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="200" y="220" width="500" height="2" fill="#ff00ff">
+      <animate attributeName="opacity" values="0;0;0.3;0;0" dur="5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Main title - base layer -->
+  <text x="450" y="130" text-anchor="middle" font-family="'Courier New', monospace" font-size="72" font-weight="bold" fill="url(#neonGrad)" filter="url(#glow)" letter-spacing="12">
+    GEKID00
+  </text>
+
+  <!-- Glitch layer 1 - red shift -->
+  <g clip-path="url(#glitchClip1)">
+    <text x="453" y="130" text-anchor="middle" font-family="'Courier New', monospace" font-size="72" font-weight="bold" fill="#ff003c" opacity="0.7" letter-spacing="12">
+      GEKID00
+      <animate attributeName="x" values="453;458;450;453" dur="0.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0;0.7;0;0.5" dur="4s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Glitch layer 2 - cyan shift -->
+  <g clip-path="url(#glitchClip2)">
+    <text x="447" y="130" text-anchor="middle" font-family="'Courier New', monospace" font-size="72" font-weight="bold" fill="#00ffff" opacity="0.5" letter-spacing="12">
+      GEKID00
+      <animate attributeName="x" values="447;443;450;447" dur="0.25s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0;0;0.5;0" dur="3.5s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Subtitle -->
+  <text x="450" y="175" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" fill="url(#subtitleGrad)" letter-spacing="6" opacity="0.9">
+    SYSTEMS PROGRAMMER // 42 PARIS
+    <animate attributeName="opacity" values="0.9;0.6;0.9" dur="3s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Blinking cursor -->
+  <rect x="620" y="160" width="10" height="18" fill="#00ffff">
+    <animate attributeName="opacity" values="1;0;1;0" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Bottom decorative line -->
+  <line x1="100" y1="230" x2="800" y2="230" stroke="url(#neonGrad)" stroke-width="1" opacity="0.4"/>
+  <circle cx="100" cy="230" r="3" fill="#ff00ff" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="800" cy="230" r="3" fill="#00ffff" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Bottom status text -->
+  <text x="450" y="260" text-anchor="middle" font-family="'Courier New', monospace" font-size="11" fill="#555570" letter-spacing="4">
+    [ C // C++ // PYTHON // DOCKER // UNIX ]
+  </text>
+
+  <!-- Corner decorations -->
+  <g stroke="#ff00ff" stroke-width="1.5" opacity="0.4">
+    <line x1="15" y1="15" x2="50" y2="15"/>
+    <line x1="15" y1="15" x2="15" y2="50"/>
+    <line x1="885" y1="15" x2="850" y2="15"/>
+    <line x1="885" y1="15" x2="885" y2="50"/>
+    <line x1="15" y1="285" x2="50" y2="285"/>
+    <line x1="15" y1="285" x2="15" y2="250"/>
+    <line x1="885" y1="285" x2="850" y2="285"/>
+    <line x1="885" y1="285" x2="885" y2="250"/>
+  </g>
+</svg>
