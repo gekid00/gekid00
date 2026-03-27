@@ -1,61 +1,88 @@
-## Hey, I'm Rayane 👋
+<div align="center">
 
-Student at **42 Paris**, building things in C, C++, and Python.
+# Rayane Bourkaib
 
----
+**Systems programmer · 42 Paris**
 
-### Languages & Tools
+Building low-level software in C and C++, from custom shells to 3D engines.
 
-<p>
-  <img src="https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white" />
-  <img src="https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/Shell-4EAA25?style=flat&logo=gnu-bash&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black" />
-</p>
+<br>
+
+<img src="https://skillicons.dev/icons?i=c,cpp,python,js,bash,docker,git,linux,vim,github&theme=dark" />
+
+<br><br>
+
+</div>
 
 ---
 
-### 42 Projects
+#### `~/42/core`
 
-| Project | Description | Language |
-|---------|-------------|----------|
-| [Libft](https://github.com/gekid00/Libft) | Custom C standard library | C |
-| [ft_printf](https://github.com/gekid00/ft_printf) | Custom printf implementation | C |
-| [get_next_line](https://github.com/gekid00/get_next_line) | Line-by-line file reader | C |
-| [minitalk](https://github.com/gekid00/minitalk) | IPC using UNIX signals | C |
-| [push_swap](https://github.com/gekid00/push_swap) | Stack sorting algorithm | C |
-| [philo](https://github.com/gekid00/philo) | Dining philosophers (threads) | C |
-| [so_long](https://github.com/gekid00/so_long) | 2D tile game with MiniLibX | C |
-| [minishell](https://github.com/gekid00/minishell) | Bash-like shell | C |
-| [cub3d](https://github.com/gekid00/cub3d) | Raycasting 3D engine | C |
-| [cpp00–09](https://github.com/gekid00/cpp00) | OOP, templates, STL | C++ |
-| [ft_irc](https://github.com/gekid00/ft_irc) | IRC server with poll() | C++ |
-| [inception](https://github.com/gekid00/inception) | Docker infrastructure | Docker |
+> Low-level C and C++ projects from the 42 common core.
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**C Projects**
+
+| | Project | What it does |
+|---|---------|-------------|
+| 📦 | [Libft](https://github.com/gekid00/Libft) | Reimplemented libc from scratch |
+| 🖨️ | [ft_printf](https://github.com/gekid00/ft_printf) | Custom `printf` with variadic args |
+| 📖 | [get_next_line](https://github.com/gekid00/get_next_line) | Buffered line reader with static state |
+| 📡 | [minitalk](https://github.com/gekid00/minitalk) | IPC via UNIX signals, bit by bit |
+| 🔢 | [push_swap](https://github.com/gekid00/push_swap) | Radix sort on dual stacks |
+| 🍝 | [philo](https://github.com/gekid00/philo) | Dining philosophers with pthreads |
+| 🎮 | [so_long](https://github.com/gekid00/so_long) | 2D tile game with MiniLibX |
+| 💻 | [minishell](https://github.com/gekid00/minishell) | Shell with AST parser and builtins |
+| 🏰 | [cub3d](https://github.com/gekid00/cub3d) | Raycasting engine (Wolfenstein-style) |
+
+</td>
+<td width="50%" valign="top">
+
+**C++ Projects**
+
+| | Project | What it does |
+|---|---------|-------------|
+| 🧱 | [cpp00](https://github.com/gekid00/cpp00) | Classes, static members, I/O |
+| 🧠 | [cpp01](https://github.com/gekid00/cpp01) | Memory, references, file streams |
+| 🔧 | [cpp02](https://github.com/gekid00/cpp02) | Fixed-point & operator overloading |
+| 🏗️ | [cpp03](https://github.com/gekid00/cpp03) | Inheritance chains |
+| 🎭 | [cpp04](https://github.com/gekid00/cpp04) | Polymorphism & abstract classes |
+| ⚠️ | [cpp05](https://github.com/gekid00/cpp05) | Exceptions & bureaucracy |
+| 🔄 | [cpp06](https://github.com/gekid00/cpp06) | Type casting (static/dynamic/reinterpret) |
+| 📐 | [cpp07](https://github.com/gekid00/cpp07) | Function & class templates |
+| 📚 | [cpp08](https://github.com/gekid00/cpp08) | STL containers & iterators |
+| 📊 | [cpp09](https://github.com/gekid00/cpp09) | STL applied (RPN, sort, exchange) |
+
+</td>
+</tr>
+</table>
+
+| | Project | What it does |
+|---|---------|-------------|
+| 💬 | [ft_irc](https://github.com/gekid00/ft_irc) | IRC server — non-blocking sockets, `poll()`, channels, operators |
+| 🐳 | [inception](https://github.com/gekid00/inception) | Docker infra — NGINX + WordPress + MariaDB on Alpine |
 
 ---
 
-### Other Projects
+#### `~/projects`
 
-| Project | Description | Stack |
-|---------|-------------|-------|
-| [todo-api-rest](https://github.com/gekid00/todo-api-rest) | Full-stack task manager | Python, FastAPI, JS |
-| [bot_discord](https://github.com/gekid00/bot_discord) | Discord bot | Python, discord.py |
+> Side projects outside the 42 curriculum.
 
----
-
-### GitHub Stats
-
-<p>
-  <img src="https://github-readme-stats.vercel.app/api?username=gekid00&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gekid00&layout=compact&theme=tokyonight&hide_border=true" height="165" />
-</p>
+| | Project | Stack | What it does |
+|---|---------|-------|-------------|
+| ✅ | [todo-api-rest](https://github.com/gekid00/todo-api-rest) | Python · FastAPI · SQLAlchemy · JS | REST API task manager with web frontend |
+| 🤖 | [bot_discord](https://github.com/gekid00/bot_discord) | Python · discord.py | Modular Discord bot with cogs |
 
 ---
 
-<p align="center">
-  <a href="https://profile.intra.42.fr/">42 Intra</a>
-</p>
+<div align="center">
+<br>
+
+```
+gcc -Wall -Wextra -Werror life.c -o 42
+```
+
+</div>
