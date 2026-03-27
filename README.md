@@ -2,27 +2,25 @@
 
 <img src="assets/header.svg" width="100%" />
 
-<br><br>
+<br>
 
 ```
-root@42paris:~$ cat /proc/self/status
+root@nightcity:~$ cat /proc/self/status
 > Rayane Bourkaib — low-level architect, from shells to 3D engines
-> STATUS: compiling the future
 ```
+
+<br>
+
+[![](https://img.shields.io/badge/SYSTEM-ONLINE-ff003c?style=for-the-badge&labelColor=0a0a0a)](#)
+[![](https://img.shields.io/badge/SCHOOL-42_PARIS-fcee09?style=for-the-badge&labelColor=0a0a0a)](#)
 
 </div>
 
 <br>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+---
 
-<br>
-
-### `> cd ~/42/c_projects`
-
-```
-root@42paris:~/42$ ls -la c_projects/
-```
+### `> ls ~/42/c_projects`
 
 | | Project | Description | Tech |
 |:---:|---------|-------------|:----:|
@@ -36,13 +34,9 @@ root@42paris:~/42$ ls -la c_projects/
 | `07` | **[minishell](https://github.com/gekid00/minishell)** | Bash-like shell — AST parser, pipes, builtins | `C` |
 | `08` | **[cub3d](https://github.com/gekid00/cub3d)** | Raycasting 3D engine (Wolfenstein-style) | `C` |
 
-<br>
+---
 
-### `> cd ~/42/cpp_modules`
-
-```
-root@42paris:~/42$ ls -la cpp_modules/
-```
+### `> ls ~/42/cpp_modules`
 
 | | Project | Description | Tech |
 |:---:|---------|-------------|:----:|
@@ -57,47 +51,31 @@ root@42paris:~/42$ ls -la cpp_modules/
 | `08` | **[cpp08](https://github.com/gekid00/cpp08)** | STL containers, iterators, algorithms | `C++` |
 | `09` | **[cpp09](https://github.com/gekid00/cpp09)** | STL applied — RPN, Bitcoin exchange, merge-insert sort | `C++` |
 
-<br>
+---
 
-### `> cd ~/42/final_projects`
-
-```
-root@42paris:~/42$ ls -la final/
-```
+### `> ls ~/42/final`
 
 | | Project | Description | Tech |
 |:---:|---------|-------------|:----:|
-| `🔌` | **[ft_irc](https://github.com/gekid00/ft_irc)** | IRC server — non-blocking sockets, `poll()`, channels | `C++` |
-| `🐳` | **[inception](https://github.com/gekid00/inception)** | Docker infra — NGINX + WordPress + MariaDB | `Docker` |
+| `>>` | **[ft_irc](https://github.com/gekid00/ft_irc)** | IRC server — non-blocking sockets, `poll()`, channels | `C++` |
+| `>>` | **[inception](https://github.com/gekid00/inception)** | Docker infra — NGINX + WordPress + MariaDB | `Docker` |
 
-<br>
+---
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-<br>
-
-### `> cd ~/side_projects`
-
-```
-root@42paris:~$ ls -la side_projects/
-```
+### `> ls ~/side_projects`
 
 | | Project | Stack | Description |
 |:---:|---------|:-----:|-------------|
-| `⚡` | **[todo-api-rest](https://github.com/gekid00/todo-api-rest)** | `Python · FastAPI · JS` | REST API task manager with web frontend |
-| `🤖` | **[bot_discord](https://github.com/gekid00/bot_discord)** | `Python · discord.py` | Modular Discord bot with cogs |
+| `>>` | **[todo-api-rest](https://github.com/gekid00/todo-api-rest)** | `Python · FastAPI · JS` | REST API task manager with web frontend |
+| `>>` | **[bot_discord](https://github.com/gekid00/bot_discord)** | `Python · discord.py` | Modular Discord bot with cogs |
 
-<br>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-<br>
+---
 
 <div align="center">
 
 ```
-root@42paris:~$ exit
-> Connection closed. See you in the matrix, netrunner.
+root@nightcity:~$ shutdown now
+> Flatlined. Jack back in later, samurai.
 ```
 
 </div>
