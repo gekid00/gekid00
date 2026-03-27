@@ -76,13 +76,3 @@ Building low-level software in C and C++, from custom shells to 3D engines.
 | ✅ | [todo-api-rest](https://github.com/gekid00/todo-api-rest) | Python · FastAPI · SQLAlchemy · JS | REST API task manager with web frontend |
 | 🤖 | [bot_discord](https://github.com/gekid00/bot_discord) | Python · discord.py | Modular Discord bot with cogs |
 
----
-
-<div align="center">
-<br>
-
-```
-gcc -Wall -Wextra -Werror life.c -o 42
-```
-
-</div>
