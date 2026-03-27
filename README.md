@@ -26,6 +26,11 @@
 |---------|-------------|
 | [cpp00–09](https://github.com/gekid00/cpp00) | OOP fundamentals, operator overloading, inheritance, polymorphism, templates, STL |
 | [ft_irc](https://github.com/gekid00/ft_irc) | IRC server — non-blocking sockets, `poll()`, channels, operators |
+
+## 42 Projects — DevOps
+
+| Project | Description |
+|---------|-------------|
 | [inception](https://github.com/gekid00/inception) | Docker infrastructure — NGINX, WordPress, MariaDB on Alpine |
 
 ## Other Projects
