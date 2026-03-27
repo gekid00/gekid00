@@ -1,181 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="200" viewBox="0 0 900 200">
   <defs>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
-    <filter id="glowHard">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
-      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1.5 0" result="colorBlur"/>
-      <feComposite in="SourceGraphic" in2="colorBlur" operator="over"/>
-    </filter>
-    <filter id="glitch1">
-      <feOffset dx="4" dy="0"/>
-    </filter>
-    <filter id="glitch2">
-      <feOffset dx="-4" dy="0"/>
-    </filter>
-    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#ff003c"/>
-      <stop offset="40%" style="stop-color:#ff1744"/>
-      <stop offset="100%" style="stop-color:#ff6b35"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
     </linearGradient>
-    <linearGradient id="yellowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#fcee09"/>
-      <stop offset="100%" style="stop-color:#ffe600"/>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#58a6ff"/>
+      <stop offset="100%" style="stop-color:#1f6feb"/>
     </linearGradient>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#0a0a0a"/>
-      <stop offset="100%" style="stop-color:#0d0608"/>
-    </linearGradient>
-    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
-      <rect width="4" height="2" fill="rgba(255,255,255,0.02)"/>
-    </pattern>
-    <pattern id="noise" width="100" height="100" patternUnits="userSpaceOnUse">
-      <rect x="5" y="12" width="1" height="1" fill="rgba(255,0,60,0.1)"/>
-      <rect x="42" y="67" width="1" height="1" fill="rgba(255,0,60,0.08)"/>
-      <rect x="78" y="23" width="1" height="1" fill="rgba(252,238,9,0.06)"/>
-      <rect x="91" y="88" width="1" height="1" fill="rgba(255,0,60,0.1)"/>
-      <rect x="33" y="45" width="1" height="1" fill="rgba(252,238,9,0.05)"/>
-    </pattern>
-    <clipPath id="glitchSlice1">
-      <rect x="0" y="88" width="900" height="6"/>
-      <rect x="0" y="128" width="900" height="4"/>
-      <rect x="0" y="168" width="900" height="3"/>
-    </clipPath>
-    <clipPath id="glitchSlice2">
-      <rect x="0" y="100" width="900" height="5"/>
-      <rect x="0" y="142" width="900" height="7"/>
-      <rect x="0" y="205" width="900" height="3"/>
-    </clipPath>
   </defs>
 
-  <!-- Background -->
-  <rect width="900" height="300" fill="url(#bgGrad)"/>
-  <rect width="900" height="300" fill="url(#noise)"/>
+  <rect width="900" height="200" fill="url(#bg)"/>
 
-  <!-- Subtle grid -->
-  <g opacity="0.04" stroke="#ff003c">
-    <line x1="0" y1="60" x2="900" y2="60" stroke-width="0.5"/>
-    <line x1="0" y1="120" x2="900" y2="120" stroke-width="0.5"/>
-    <line x1="0" y1="180" x2="900" y2="180" stroke-width="0.5"/>
-    <line x1="0" y1="240" x2="900" y2="240" stroke-width="0.5"/>
-    <line x1="180" y1="0" x2="180" y2="300" stroke-width="0.5"/>
-    <line x1="360" y1="0" x2="360" y2="300" stroke-width="0.5"/>
-    <line x1="540" y1="0" x2="540" y2="300" stroke-width="0.5"/>
-    <line x1="720" y1="0" x2="720" y2="300" stroke-width="0.5"/>
-  </g>
+  <!-- Subtle accent line -->
+  <rect x="0" y="197" width="900" height="3" fill="url(#accent)" opacity="0.6"/>
 
-  <!-- Scanlines -->
-  <rect width="900" height="300" fill="url(#scanlines)"/>
-
-  <!-- Animated glitch bars -->
-  <g>
-    <rect x="0" y="92" width="900" height="2" fill="#ff003c" opacity="0">
-      <animate attributeName="opacity" values="0;0.25;0;0;0.15;0" dur="4s" repeatCount="indefinite"/>
-      <animate attributeName="y" values="92;95;92;130;92" dur="5s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="0" y="175" width="650" height="1" fill="#fcee09" opacity="0">
-      <animate attributeName="opacity" values="0;0.2;0;0.3;0" dur="3s" repeatCount="indefinite"/>
-      <animate attributeName="x" values="0;120;0;50;0" dur="3.5s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="100" y="215" width="400" height="2" fill="#ff003c" opacity="0">
-      <animate attributeName="opacity" values="0;0;0.2;0;0" dur="6s" repeatCount="indefinite"/>
-    </rect>
-  </g>
-
-  <!-- Top yellow accent line -->
-  <rect x="0" y="0" width="900" height="3" fill="url(#yellowGrad)" opacity="0.8"/>
-  <rect x="0" y="0" width="900" height="3" fill="url(#yellowGrad)" opacity="0.4">
-    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2s" repeatCount="indefinite"/>
-  </rect>
-
-  <!-- Decorative left vertical bar -->
-  <rect x="30" y="40" width="3" height="220" fill="#ff003c" opacity="0.15"/>
-  <rect x="30" y="40" width="3" height="80" fill="#ff1744" opacity="0.5">
-    <animate attributeName="y" values="40;180;40" dur="8s" repeatCount="indefinite"/>
-  </rect>
-
-  <!-- Decorative right vertical bar -->
-  <rect x="867" y="40" width="3" height="220" fill="#ff003c" opacity="0.15"/>
-  <rect x="867" y="120" width="3" height="80" fill="#ff1744" opacity="0.5">
-    <animate attributeName="y" values="120;40;120" dur="8s" repeatCount="indefinite"/>
-  </rect>
-
-  <!-- Main title shadow/glow -->
-  <text x="450" y="125" text-anchor="middle" font-family="'Courier New', monospace" font-size="78" font-weight="900" fill="#ff003c" opacity="0.3" filter="url(#glowHard)" letter-spacing="14">
-    GEKID00
+  <!-- Name -->
+  <text x="450" y="90" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="48" font-weight="700" fill="#e6edf3" letter-spacing="2">
+    Rayane Bourkaib
   </text>
-
-  <!-- Main title -->
-  <text x="450" y="125" text-anchor="middle" font-family="'Courier New', monospace" font-size="78" font-weight="900" fill="url(#redGrad)" filter="url(#glow)" letter-spacing="14">
-    GEKID00
-  </text>
-
-  <!-- Glitch slice 1 - red shifted -->
-  <g clip-path="url(#glitchSlice1)" opacity="0">
-    <text x="456" y="125" text-anchor="middle" font-family="'Courier New', monospace" font-size="78" font-weight="900" fill="#ff003c" letter-spacing="14">
-      GEKID00
-    </text>
-    <animate attributeName="opacity" values="0;0.8;0;0;0;0.6;0;0" dur="5s" repeatCount="indefinite"/>
-  </g>
-
-  <!-- Glitch slice 2 - yellow shifted -->
-  <g clip-path="url(#glitchSlice2)" opacity="0">
-    <text x="444" y="125" text-anchor="middle" font-family="'Courier New', monospace" font-size="78" font-weight="900" fill="#fcee09" letter-spacing="14">
-      GEKID00
-    </text>
-    <animate attributeName="opacity" values="0;0;0.6;0;0;0;0.7;0" dur="4s" repeatCount="indefinite"/>
-  </g>
-
-  <!-- Subtitle line -->
-  <line x1="220" y1="148" x2="680" y2="148" stroke="#ff003c" stroke-width="0.5" opacity="0.3"/>
 
   <!-- Subtitle -->
-  <text x="450" y="175" text-anchor="middle" font-family="'Courier New', monospace" font-size="15" fill="#fcee09" letter-spacing="8" opacity="0.9" filter="url(#glow)">
-    SYSTEMS PROGRAMMER
-    <animate attributeName="opacity" values="0.9;0.5;0.9" dur="4s" repeatCount="indefinite"/>
+  <text x="450" y="130" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" fill="#8b949e" letter-spacing="4">
+    SYSTEMS PROGRAMMER · 42 PARIS
   </text>
 
-  <!-- Secondary subtitle -->
-  <text x="450" y="200" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" fill="#ff003c" letter-spacing="5" opacity="0.5">
-    42 PARIS // LOW-LEVEL ARCHITECT
-  </text>
-
-  <!-- Blinking cursor after subtitle -->
-  <rect x="597" y="163" width="9" height="15" fill="#fcee09">
-    <animate attributeName="opacity" values="1;0;1;0" dur="1s" repeatCount="indefinite"/>
-  </rect>
-
-  <!-- Corner brackets - cyberpunk HUD style -->
-  <g stroke="#ff003c" stroke-width="2" opacity="0.5">
-    <!-- Top left -->
-    <line x1="12" y1="12" x2="55" y2="12"/>
-    <line x1="12" y1="12" x2="12" y2="55"/>
-    <!-- Top right -->
-    <line x1="888" y1="12" x2="845" y2="12"/>
-    <line x1="888" y1="12" x2="888" y2="55"/>
-    <!-- Bottom left -->
-    <line x1="12" y1="288" x2="55" y2="288"/>
-    <line x1="12" y1="288" x2="12" y2="245"/>
-    <!-- Bottom right -->
-    <line x1="888" y1="288" x2="845" y2="288"/>
-    <line x1="888" y1="288" x2="888" y2="245"/>
-  </g>
-
-  <!-- Small HUD details -->
-  <g font-family="'Courier New', monospace" font-size="8" fill="#ff003c" opacity="0.3">
-    <text x="65" y="20">SYS.ONLINE</text>
-    <text x="790" y="20">v2.0.77</text>
-    <text x="65" y="290">NET.ACTIVE</text>
-    <text x="802" y="290">42.FR</text>
-  </g>
-
-  <!-- Bottom yellow accent line -->
-  <rect x="0" y="297" width="900" height="3" fill="url(#yellowGrad)" opacity="0.8"/>
-
-  <!-- Bottom status bar -->
-  <text x="450" y="258" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#3a1015" letter-spacing="3">
-    C // C++ // PYTHON // DOCKER // UNIX
+  <!-- Tech line -->
+  <text x="450" y="165" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" fill="#58a6ff" letter-spacing="2" opacity="0.7">
+    C · C++ · Python · Docker · Unix
   </text>
 </svg>
