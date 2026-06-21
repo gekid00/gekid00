@@ -32,10 +32,3 @@
 | Project | Description |
 |---------|-------------|
 | [inception](https://github.com/gekid00/inception) | Docker infrastructure — NGINX, WordPress, MariaDB on Alpine |
-
-## Other Projects
-
-| Project | Stack | Description |
-|---------|-------|-------------|
-| [todo-api-rest](https://github.com/gekid00/todo-api-rest) | Python, FastAPI, JS | REST API task manager with web frontend |
-| [bot_discord](https://github.com/gekid00/bot_discord) | Python, discord.py | Modular Discord bot |
