@@ -22,11 +22,11 @@
 
   <!-- Subtitle -->
   <text x="450" y="130" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" fill="#8b949e" letter-spacing="4">
-    SYSTEMS PROGRAMMER · 42 PARIS
+    SOFTWARE ENGINEER · 42 PARIS
   </text>
 
   <!-- Tech line -->
   <text x="450" y="165" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" fill="#58a6ff" letter-spacing="2" opacity="0.7">
-    C · C++ · Python · Docker · Unix
+    C · C++ · TypeScript · Node · Docker · Unix
   </text>
 </svg>

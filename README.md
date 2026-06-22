@@ -6,6 +6,25 @@
 
 <br>
 
+Software engineering student at **42 Paris**, currently **looking for an internship**.
+Strong foundations in low-level systems programming (C/C++, Unix, networking, concurrency), now building full-stack web applications in TypeScript.
+
+📫 **rayanebourkaib.pro@gmail.com**
+
+<br>
+
+## Featured project
+
+### [ft_transcendence](https://github.com/gekid00/ft_transcendence) — Real-time multiplayer Connect 4 platform
+
+Full-stack, containerized web app: real-time 1v1 matches over WebSockets, a minimax AI opponent, ELO ranking, and a complete social layer (friends, chat, notifications) — deployed as 7 orchestrated containers behind a WAF.
+
+> **My role:** Tech Lead & Backend (team of 5) — owned the backend architecture, authentication (JWT + bcrypt + 42 OAuth), the real-time social layer, and a 150+ test suite.
+
+`TypeScript` · `Fastify` · `Astro + React` · `Socket.io` · `PostgreSQL + Drizzle` · `Vault` · `ModSecurity WAF` · `Podman`
+
+<br>
+
 ## 42 Projects — C
 
 | Project | Description |
