@@ -6,8 +6,12 @@
 
 <br>
 
-Software engineering student at **42 Paris**, currently **looking for an internship**.
-Strong foundations in low-level systems programming (C/C++, Unix, networking, concurrency), now building full-stack web applications in TypeScript.
+Full-stack & mobile developer, student at **42 Paris** (RNCP level 7 track).
+Currently **Full Stack & Mobile developer intern at [Pol](https://www.linkedin.com/company/95961714/)** (civic tech app): Flutter app, NestJS / Prisma / PostgreSQL microservices, Next.js back-office, 32 pull requests merged to production in 3 months.
+
+🔎 **Looking for a full-time job (CDI) or a 1-year apprenticeship in Paris, starting March 2027** — full-stack, mobile or backend.
+
+Strong foundations in low-level systems programming (C/C++, Unix, networking, concurrency) from the 42 curriculum.
 
 📫 **rayanebourkaib.pro@gmail.com**
 
