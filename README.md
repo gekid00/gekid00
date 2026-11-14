@@ -47,7 +47,7 @@ Full-stack, containerized web app: real-time 1v1 matches over WebSockets, a mini
 
 | Project | Description |
 |---------|-------------|
-| [cpp00–09](https://github.com/gekid00/cpp00) | OOP fundamentals, operator overloading, inheritance, polymorphism, templates, STL |
+| [cpp-modules](https://github.com/gekid00/cpp-modules) | OOP fundamentals, operator overloading, inheritance, polymorphism, templates, STL |
 | [ft_irc](https://github.com/gekid00/ft_irc) | IRC server — non-blocking sockets, `poll()`, channels, operators |
 
 ## 42 Projects — DevOps
