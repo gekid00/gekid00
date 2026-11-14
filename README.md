@@ -29,17 +29,20 @@ Full-stack, containerized web app: real-time 1v1 matches over WebSockets, a mini
 
 <br>
 
+## Mobile & Web
+
+| Project | Description |
+|---------|-------------|
+| [piscine_mobile](https://github.com/gekid00/piscine_mobile) | Flutter apps — calculator, weather app with GPS geolocation |
+| [todo-api-rest](https://github.com/gekid00/todo-api-rest) | REST API in FastAPI + SQLAlchemy with a vanilla JS frontend |
+
+<br>
+
 ## 42 Projects — C
 
 | Project | Description |
 |---------|-------------|
-| [Libft](https://github.com/gekid00/Libft) | Custom C standard library |
-| [ft_printf](https://github.com/gekid00/ft_printf) | Custom `printf` — variadic functions, base conversion |
-| [get_next_line](https://github.com/gekid00/get_next_line) | Buffered line reader with static state |
-| [minitalk](https://github.com/gekid00/minitalk) | IPC via UNIX signals, bit-level transmission |
-| [push_swap](https://github.com/gekid00/push_swap) | Radix sort on dual stacks |
 | [philo](https://github.com/gekid00/philo) | Dining philosophers — pthreads & mutexes |
-| [so_long](https://github.com/gekid00/so_long) | 2D tile game with MiniLibX |
 | [minishell](https://github.com/gekid00/minishell) | Bash-like shell — AST parser, pipes, builtins |
 | [cub3d](https://github.com/gekid00/cub3d) | Raycasting 3D engine (Wolfenstein-style) |
 
